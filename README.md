@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Survey Kepuasan Gaji</title>
+    <title>Survey Kepuasan Gaji - JNE</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 20px;
             background-color: #f5f5f5;
+        }
+        .jne-logo {
+            width: 150px;
+            margin-bottom: 20px;
         }
         .survey-container {
             background-color: white;
@@ -43,17 +47,17 @@
             position: absolute;
         }
         .message {
-            margin: 40px auto; /* Lebih banyak ruang */
-            padding: 30px; /* 2x lebih besar */
-            background-color: #ff0000; /* Merah */
-            color: white; /* Teks putih */
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ff0000;
+            color: white;
             border-radius: 10px;
             display: none;
             font-weight: bold;
-            font-size: 24px; /* Ukuran font lebih besar */
-            width: 80%; /* Lebar lebih besar */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Efek bayangan */
-            animation: pulse 0.5s; /* Animasi muncul */
+            font-size: 24px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: pulse 0.5s;
         }
         @keyframes pulse {
             0% { transform: scale(0.9); opacity: 0; }
@@ -63,19 +67,35 @@
             display: none;
         }
         .laugh-gif {
-            width: 180px; /* Sedikit lebih besar */
+            width: 180px;
             margin: 20px auto;
             display: none;
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 12px;
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <!-- Logo JNE di Awal -->
+    <img src="https://www.jne.co.id/images/logo-jne.png" alt="Logo JNE" class="jne-logo">
+    
     <div class="survey-container">
         <h1 id="question">APAKAH ANDA PUAS DENGAN GAJI ANDA SAAT INI?</h1>
         <button id="yesBtn" class="btn">YA</button>
         <button id="noBtn" class="btn">TIDAK</button>
         <div id="message" class="message">BAGUS, SEKARANG KEMBALI BEKERJA! 💼</div>
         <img id="laughGif" class="laugh-gif" src="https://media.giphy.com/media/p0RDMJGgMXF96/giphy.gif?cid=ecf05e47jse902dv719kvr05xat09d710syw2k7e3gnr1zqu&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="Tertawa ngakak">
+    </div>
+
+    <!-- Logo JNE di Akhir -->
+    <div class="footer">
+        <img src="https://www.jne.co.id/images/logo-jne.png" alt="Logo JNE" class="jne-logo" style="width: 120px;">
+        <p>PT. Jalur Nugraha Ekakurir</p>
+        <p>© 2024 Survey Kepuasan Karyawan</p>
     </div>
 
     <script>
